@@ -1,8 +1,8 @@
 (export (version D)
   (design
-    (source /home/greg/Projects/FullChargeAhead/FullChargeAhead.sch)
-    (date "Fri 22 Jul 2016 08:38:10 PM EDT")
-    (tool "Eeschema 4.0.2+e4-6225~38~ubuntu16.04.1-stable")
+    (source /home/greg/Projects/CE/FullChargeAhead/FullChargeAhead.sch)
+    (date "Thu 11 Aug 2016 10:02:29 PM EDT")
+    (tool "Eeschema 4.0.3+e1-6302~38~ubuntu16.04.1-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title)
@@ -85,7 +85,7 @@
       (tstamp 5791AB4F))
     (comp (ref P1)
       (value USB_PWR)
-      (footprint Connect:USB_Micro-B)
+      (footprint gl:USB_Micro-B-ebay)
       (libsource (lib fca) (part USB_PWR))
       (sheetpath (names /) (tstamps /))
       (tstamp 5792BCBA))
@@ -179,12 +179,12 @@
         (pin (num 5) (name GND) (type power_in))
         (pin (num 6) (name shield) (type passive)))))
   (libraries
-    (library (logical conn)
-      (uri /usr/share/kicad/library/conn.lib))
     (library (logical device)
       (uri /usr/share/kicad/library/device.lib))
+    (library (logical conn)
+      (uri /usr/share/kicad/library/conn.lib))
     (library (logical fca)
-      (uri /home/greg/Projects/FullChargeAhead/fca.lib)))
+      (uri /home/greg/Projects/CE/FullChargeAhead/fca.lib)))
   (nets
     (net (code 1) (name "Net-(R3-Pad1)")
       (node (ref R3) (pin 1))
